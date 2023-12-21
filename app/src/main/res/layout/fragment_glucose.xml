@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/purple_700">
+
+
+    <Button
+        android:id="@+id/date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@+id/date_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/fasting_text"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            />
+
+        <EditText
+            android:id="@+id/glucose_fasting"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="18sp"
+            android:text="@string/breakfast_text"
+            android:textColor="@color/white"
+            android:padding="15dp"/>
+        <EditText
+            android:id="@+id/glucose_breakfast"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/lunch_text"
+            android:padding="15dp"/>
+        <EditText
+            android:id="@+id/glucose_lunch"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/dinner_text"
+            android:padding="15dp"/>
+        <EditText
+            android:id="@+id/glucose_dinner"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:backgroundTint="@color/white"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/fasting_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text=""/>
+            <TextView
+                android:id="@+id/fasting_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text=""/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/breakfast_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text=""/>
+            <TextView
+                android:id="@+id/breakfast_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/lunch_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text=""/>
+            <TextView
+                android:id="@+id/lunch_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/dinner_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text=""/>
+            <TextView
+                android:id="@+id/dinner_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:text="" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_button_text"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:layout_gravity="left"/>
+        <Button
+            android:id="@+id/history_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/history_button_text"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="right"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/send_report_button"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/glucose_report_text"/>
+</LinearLayout>
+
+
+
+
+
+
+

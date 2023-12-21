@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/glucoseListFragment">
+
+    <fragment
+        android:id="@+id/glucoseListFragment"
+        android:name="edu.arizona.cast.hannaarnold.glucosemonitor.GlucoseListFragment"
+        android:label="GlucoseListFragment"
+        tools:layout="@layout/fragment_glucose_list" >
+        <action
+            android:id="@+id/show_glucose_detail"
+            app:destination="@id/glucoseFragment" />
+        <argument
+            android:name="glucoseId"
+            app:argType="java.util.Date" />
+    </fragment>
+    <fragment
+        android:id="@+id/glucoseFragment"
+        android:name="edu.arizona.cast.hannaarnold.glucosemonitor.GlucoseFragment"
+        android:label="GlucoseFragment"
+        tools:layout="@layout/fragment_glucose">
+        <argument
+            android:name="glucoseId"
+            app:argType="java.util.Date" />
+        <action
+            android:id="@+id/select_date"
+            app:destination="@id/datePickerFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="edu.arizona.cast.hannaarnold.glucosemonitor.DatePickerFragment"
+        android:label="DatePickerFragment" >
+        <argument
+            android:name="glucoseDate"
+            app:argType="java.util.Date" />
+        <action
+            android:id="@+id/date_picker_to_detail"
+            app:destination="@id/glucoseFragment" />
+    </dialog>
+</navigation>

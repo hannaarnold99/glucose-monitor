@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Glucose Monitor</string>
+    <string name="hypoglycemic_range">Hypoglycemic</string>
+    <string name="normal_range">Normal</string>
+    <string name="abnormal_range">Abnormal</string>
+    <string name="fasting_text">Fasting: </string>
+    <string name="breakfast_text">Breakfast: </string>
+    <string name="lunch_text">Lunch: </string>
+    <string name="dinner_text">Dinner: </string>
+    <string name="clear_button_text">Clear</string>
+    <string name="history_button_text">History</string>
+    <string name="new_glucose">New Glucose</string>
+    <string name="glucose_report_text">Send Glucose Report</string>
+    <string name="glucose_report">
+      The glucose data from %1$s:
+        Fasting: %2$d
+        Breakfast: %3$d
+        Lunch: %4$d
+        Dinner: %5$d
+
+        Average: %6$d
+        Normal: %7$s
+    </string>
+
+    <string name="glucose_report_subject">Glucose Monitor Glucose Report</string>
+    <string name="send_report">Send glucose report via</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+</resources>
